@@ -20,7 +20,7 @@ func main() {
 		switch command {
 
 		case 0:
-			fmt.Println("Bye!")
+			fmt.Println("\nBye!\n")
 			return
 
 		case 1:
@@ -54,7 +54,7 @@ func main() {
 
 			fmt.Println("\nExported", numberOfStudents, "students' attendance to", filename, "file.\n")
 		default:
-			fmt.Println("Wrong command!")
+			fmt.Println("\nWrong command!\n")
 		}
 	}
 }
