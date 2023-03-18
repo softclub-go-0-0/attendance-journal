@@ -11,6 +11,7 @@ func ExportAttendanceToFile(filename string) (totalNumber int, err error) {
 	if err != nil {
 		return
 	}
+	defer file.Close()
 
 	for _, student := range database.Students {
 		studentData := fmt.Sprintf("%d. %s %s - %d:%d, %d:%d, %d:%d, %d:%d, %d:%d, %d:%d\n",
